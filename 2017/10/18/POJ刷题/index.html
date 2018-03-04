@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>POJ刷题 | Samsara_Karma</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="简介POJ刷题列表 Date：2017/11/27NOIP划水，游记什么的到时候有感想了再补，现在是时候从初级开始推进了">
+<meta name="keywords" content="OI-复赛,POJ">
+<meta property="og:type" content="article">
+<meta property="og:title" content="POJ刷题">
+<meta property="og:url" content="http://yoursite.com/2017/10/18/POJ刷题/index.html">
+<meta property="og:site_name" content="Samsara_Karma">
+<meta property="og:description" content="简介POJ刷题列表 Date：2017/11/27NOIP划水，游记什么的到时候有感想了再补，现在是时候从初级开始推进了">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:updated_time" content="2017-11-27T11:18:00.481Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="POJ刷题">
+<meta name="twitter:description" content="简介POJ刷题列表 Date：2017/11/27NOIP划水，游记什么的到时候有感想了再补，现在是时候从初级开始推进了">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="../../../../css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/',
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/head.jpg" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/" title="Hi Mate">Samsara_Karma</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">For OI And Math</p>
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="../../../../index.html">博客首页</a></li>
+                        
+                            <li><a href="../../../../tags/OI-初赛">初赛学习</a></li>
+                        
+                            <li><a href="../../../../tags/OI-复赛">复赛学习</a></li>
+                        
+                            <li><a href="../../../../tags/杂记">往事回忆</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="https://mail.qq.com/cgi-bin/frame_html?sid=rygbwhxi7HuqbzRt&r=c568a03d1a11c72df41290223be69d55" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/SamsaraKarma" title="github">github</a>
+                            
+                                <a class="fl zhihu" target="_blank" href="https://www.zhihu.com" title="zhihu">zhihu</a>
+                            
+                                <a class="fl QQ" target="_blank" href="https://user.qzone.qq.com/1536679559" title="QQ">QQ</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="../../../../tags/OI-初赛/" style="font-size: 10px;">OI-初赛</a> <a href="../../../../tags/OI-复赛/" style="font-size: 20px;">OI-复赛</a> <a href="../../../../tags/POJ/" style="font-size: 15px;">POJ</a> <a href="../../../../tags/codeforces/" style="font-size: 10px;">codeforces</a> <a href="../../../../tags/web搭建/" style="font-size: 10px;">web搭建</a> <a href="../../../../tags/实时赛/" style="font-size: 10px;">实时赛</a> <a href="../../../../tags/常用语法学习/" style="font-size: 10px;">常用语法学习</a> <a href="../../../../tags/数据结构/" style="font-size: 10px;">数据结构</a> <a href="../../../../tags/杂记/" style="font-size: 10px;">杂记</a> <a href="../../../../tags/极值问题/" style="font-size: 10px;">极值问题</a> <a href="../../../../tags/模板/" style="font-size: 10px;">模板</a> <a href="../../../../tags/组合数学/" style="font-size: 10px;">组合数学</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.cnblogs.com/Dance-Of-Faith">Dance_Of_Faith</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.cnblogs.com/logic-yzf">logic-yzf</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://tkandi.github.io">tkandi</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://anthonyledger.github.io">Deluxurous</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://orbitingflea.github.io">orbitingflea</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.csdn.net/functionendless">functionendless</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://foreverpiano.cf">foreverpiano</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://tenecnt.github.io">tenecnt</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.csdn.net/effervescence/">effervescence</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.cnblogs.com/whc200305/">pinkex</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.csdn.net/qq_39992190">CalvinJin</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">有疑问联系作者QQ:1536679559</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>           
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">Samsara_Karma</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/head.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="Me">Samsara_Karma</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">For OI And Math</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="../../../../index.html">博客首页</a></li>
+                
+                    <li><a href="../../../../tags/OI-初赛">初赛学习</a></li>
+                
+                    <li><a href="../../../../tags/OI-复赛">复赛学习</a></li>
+                
+                    <li><a href="../../../../tags/杂记">往事回忆</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="https://mail.qq.com/cgi-bin/frame_html?sid=rygbwhxi7HuqbzRt&r=c568a03d1a11c72df41290223be69d55" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/SamsaraKarma" title="github">github</a>
+                    
+                        <a class="zhihu" target="_blank" href="https://www.zhihu.com" title="zhihu">zhihu</a>
+                    
+                        <a class="QQ" target="_blank" href="https://user.qzone.qq.com/1536679559" title="QQ">QQ</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-POJ刷题" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="" class="article-date">
+      <time datetime="2017-10-18T07:31:34.000Z" itemprop="datePublished">2017-10-18</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      POJ刷题
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/OI-复赛/">OI-复赛</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/POJ/">POJ</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>POJ刷题列表</p>
+<h3 id="Date：2017-11-27"><a href="#Date：2017-11-27" class="headerlink" title="Date：2017/11/27"></a>Date：2017/11/27</h3><p>NOIP划水，游记什么的到时候有感想了再补，现在是时候从初级开始推进了</p>
+<a id="more"></a>
+<h3 id="Date：2017-10-18"><a href="#Date：2017-10-18" class="headerlink" title="Date：2017/10/18"></a>Date：2017/10/18</h3><p>几千题貌似有点多？NOIP前起码要把经典题刷完 (FLAG?!)</p>
+<font size="6px" color="orange"><center>初级</center></font>
+
+<h2 id="基本算法"><a href="#基本算法" class="headerlink" title="基本算法"></a>基本算法</h2><p>(1) <font color="yellow">枚举 (POJ1753, POJ2965)</font><br>(2) <font color="yellow">贪心 (POJ1328, POJ2109, POJ2586)</font><br>(3) 递归和分治法.<br>(4) 递推<br>(5) 构造法 (POJ3295)<br>(6) 模拟法 (POJ1068, POJ2632, POJ1573, POJ2993, POJ2996)</p>
+<h2 id="图算法"><a href="#图算法" class="headerlink" title="图算法"></a>图算法</h2><p>(1) 图的深度优先遍历和广度优先遍历<br>(2) 最短路径算法 (dijkstra, bellman-ford, floyd, heap+dijkstra) (POJ1860, POJ3259, POJ1062, POJ2253, POJ1125, POJ2240)<br>(3) 最小生成树算法 (prim, kruskal) (POJ1789, POJ2485, POJ1258, POJ3026)<br>(4) 拓扑排序 (POJ1094)<br>(5) 二分图的最大匹配 (匈牙利算法) (POJ3041, POJ3020)<br>(6) 最大流的增广路算法(KM算法) (POJ1459, POJ3436)</p>
+<h2 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h2><p>(1) 串 (POJ1035, POJ3080, POJ1936)<br>(2) 排序(快排、归并排(与逆序数有关)、堆排) (POJ2388, POJ2299)<br>(3) 简单并查集的应用.<br>(4) 哈希表和二分查找等高效查找法(数的Hash, 串的Hash) (POJ3349, POJ3274, POJ2151, POJ1840, POJ2002, POJ2503)<br>(5) 哈夫曼树(POJ3253)<br>(6) 堆<br>(7) trie树(静态建树、动态建树) (POJ2513)</p>
+<h2 id="简单搜索"><a href="#简单搜索" class="headerlink" title="简单搜索"></a>简单搜索</h2><p>(1) 深度优先搜索 (POJ2488, POJ3083, POJ3009, POJ1321, POJ2251)<br>(2) 广度优先搜索 (POJ3278, POJ1426, POJ3126, POJ3087, POJ3414)<br>(3) 简单搜索技巧和剪枝 (POJ2531, POJ1416, POJ2676, POJ1129)</p>
+<h2 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h2><p>(1) 背包问题 (POJ1837, POJ1276)<br>(2) 型如下表的简单DP (可参考lrj的书 page149):</p>
+<ul>
+<li>E[j] = opt{D + w(i, j)} (POJ3267, POJ1836, POJ1260, POJ2533)</li>
+<li>E[i, j] = opt{D[i-1, j] + xi, D[i, j-1] + yj, D[i-1]/[j-1] + zij} (最长公共子序列) (POJ3176, POJ1080, POJ1159)</li>
+<li>C[i, j] = w[i, j] + opt{C[i, k-1] + C[k, j]} (最优二分检索树问题)</li>
+</ul>
+<h2 id="数学"><a href="#数学" class="headerlink" title="数学"></a>数学</h2><p>(1) 组合数学 (POJ3252, POJ1850, POJ1019, POJ1942)</p>
+<ul>
+<li>加法原理和乘法原理.</li>
+<li>排列组合.</li>
+<li>递推关系.<br>(2) 数论 (POJ2635, POJ3292, POJ1845, POJ2115)</li>
+<li>素数与整除问题</li>
+<li>进制位.</li>
+<li>同余模运算.<br>(3) 计算方法 (POJ3273, POJ3258, POJ1905, POJ3122)</li>
+<li>二分法求解单调函数相关知识.</li>
+</ul>
+<h2 id="计算几何学"><a href="#计算几何学" class="headerlink" title="计算几何学"></a>计算几何学</h2><p>(1) 几何公式<br>(2) 叉积和点积的运用(如线段相交的判定, 点到线段的距离等) (POJ2031, POJ1039)<br>(3) 多边型的简单算法(求面积)和相关判定(点在多边型内, 多边型是否相交) (POJ1408, POJ1584)<br>(4) 凸包 (POJ2187, POJ1113)</p>
+<font size="6px" color="orange"><center>中级</center></font>
+
+<h2 id="基本算法-1"><a href="#基本算法-1" class="headerlink" title="基本算法"></a>基本算法</h2><p>(1) C++的标准模版库的应用 (POJ3096, POJ3007)<br>(2) 较为复杂的模拟题的训练 (POJ3393, POJ1472, POJ3371, POJ1027, POJ2706)</p>
+<h2 id="图算法-1"><a href="#图算法-1" class="headerlink" title="图算法"></a>图算法</h2><p>(1) 差分约束系统的建立和求解 (POJ1201, POJ2983)<br>(2) 最小费用最大流 (POJ2516, POJ2195)<br>(3) 双连通分量 (POJ2942)<br>(4) 强连通分支及其缩点 (POJ2186)<br>(5) 图的割边和割点 (POJ3352)<br>(6) 最小割模型、网络流规约 (POJ3308)</p>
+<h2 id="数据结构-1"><a href="#数据结构-1" class="headerlink" title="数据结构"></a>数据结构</h2><p>(1) 线段树 (POJ2528, POJ2828, POJ2777, POJ2886, POJ2750)<br>(2) 静态二叉检索树 (POJ2482, POJ2352)<br>(3) 树状树组 (POJ1195, POJ3321)<br>(4) RMQ (POJ3264, POJ3368)<br>(5) 并查集的高级应用 (POJ1703, POJ2492)<br>(6) KMP算法 (POJ1961, POJ2406)</p>
+<h2 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h2><p>(1)最优化剪枝和可行性剪枝<br>(2)搜索的技巧和优化 (POJ3411, POJ1724)<br>(3)记忆化搜索(POJ3373, POJ1691)</p>
+<h2 id="动态规划-1"><a href="#动态规划-1" class="headerlink" title="动态规划"></a>动态规划</h2><p>(1) 较为复杂的动态规划(如动态规划解特别的旅行商问题等) (POJ1191, POJ1054, POJ3280, POJ2029, POJ2948, POJ1925, POJ3034)<br>(2) 记录状态的动态规划 (POJ3254, POJ2411, POJ1185)<br>(3) 树型动态规划 (POJ2057, POJ1947, POJ2486, POJ3140)</p>
+<h2 id="数学-1"><a href="#数学-1" class="headerlink" title="数学"></a>数学</h2><p>(1) 组合数学</p>
+<ul>
+<li>容斥原理</li>
+<li>抽屉原理</li>
+<li>置换群与Polya定理 (POJ1286, POJ2409, POJ3270, POJ1026)</li>
+<li>递推关系和母函数<br>(2) 数学</li>
+<li>高斯消元法 (POJ2947, POJ1487, POJ2065, POJ1166, POJ1222)</li>
+<li>概率问题 (POJ3071, POJ3440)</li>
+<li>GCD、扩展的欧几里德(中国剩余定理) (POJ3101)<br>(3) 计算方法.</li>
+<li>0/1分数规划. (POJ2976)</li>
+<li>三分法求解单峰(单谷)的极值</li>
+<li>矩阵法 (POJ3150, POJ3422, POJ3070)</li>
+<li>迭代逼近 (POJ3301)<br>(4) 随机化算法 (POJ3318, POJ2454)<br>(5) 杂题 (POJ1870, POJ3296, POJ3286, POJ1095)</li>
+</ul>
+<h2 id="计算几何学-1"><a href="#计算几何学-1" class="headerlink" title="计算几何学"></a>计算几何学</h2><p>(1) 坐标离散化<br>(2) 扫描线算法(例如求矩形的面积和周长并, 常和线段树或堆一起使用) (POJ1765, POJ1177, POJ1151, POJ3277, POJ2280, POJ3004)<br>(3) 多边形的内核(半平面交) (POJ3130, POJ3335)<br>(4) 几何工具的综合应用 (POJ1819, POJ1066, POJ2043, POJ3227, POJ2165, POJ3429)</p>
+<font size="6px" color="orange"><center>高级</center></font>
+
+<h2 id="基本算法要求"><a href="#基本算法要求" class="headerlink" title="基本算法要求"></a>基本算法要求</h2><p>(1) 代码快速写成, 精简但不失风格 (POJ2525, POJ1684, POJ1421, POJ1048, POJ2050, POJ3306)<br>(2) 保证正确性和高效性 (POJ3434)</p>
+<h2 id="图算法-2"><a href="#图算法-2" class="headerlink" title="图算法"></a>图算法</h2><p>(1) 度限制最小生成树和第K最短路 (POJ1639)<br>(2) 最短路, 最小生成树, 二分图, 最大流问题的相关理论(主要是模型建立和求解) (POJ3155, POJ2112, POJ1966, POJ3281, POJ1087, POJ2289, POJ3216, POJ2446<br>(3) 最优比率生成树 (POJ2728)<br>(4) 最小树形图 (POJ3164)<br>(5) 次小生成树<br>(6) 无向图、有向图的最小环</p>
+<h2 id="数据结构-2"><a href="#数据结构-2" class="headerlink" title="数据结构"></a>数据结构</h2><p>(1) trie图的建立和应用 (POJ2778)<br>(2) LCA和RMQ问题(LCA(最近公共祖先问题) 有离线算法(并查集+dfs)和在线算法(RMQ+dfs)) (POJ1330)<br>(3) 双端队列和它的应用(维护一个单调的队列, 常常在动态规划中起到优化状态转移<br>的目的) (POJ2823)<br>(4) 左偏树(可合并堆)<br>(5) 后缀树(非常有用的数据结构, 也是赛区考题的热点) (POJ3415, POJ3294)</p>
+<h2 id="搜索-1"><a href="#搜索-1" class="headerlink" title="搜索"></a>搜索</h2><p>(1) 较麻烦的搜索题目训练 (POJ1069, POJ3322, POJ1475, POJ1924, POJ2049, POJ3426)<br>(2) 广搜的状态优化: 利用M进制数存储状态、转化为串用hash表判重、按位压缩存储<br>状态、双向广搜、A*算法 (POJ1768, POJ1184, POJ1872, POJ1324, POJ2046, POJ1482)<br>(3) 深搜的优化:尽量用位运算、一定要加剪枝、函数参数尽可能少、层数不易过大<br>、可以考虑双向搜索或者是轮换搜索、IDA*算法 (POJ3131, POJ2870, POJ2286)</p>
+<h2 id="动态规划-2"><a href="#动态规划-2" class="headerlink" title="动态规划"></a>动态规划</h2><p>(1) 需要用数据结构优化的动态规划 (POJ2754, POJ3378, POJ3017)<br>(2) 四边形不等式理论<br>(3) 较难的状态DP (POJ3133)</p>
+<h2 id="数学-2"><a href="#数学-2" class="headerlink" title="数学"></a>数学</h2><p>(1) 组合数学</p>
+<ul>
+<li>MoBius反演 (POJ2888, POJ2154)</li>
+<li>偏序关系理论<br>(2) 博奕论</li>
+<li>极大极小过程 (POJ3317, POJ1085)</li>
+<li>Nim问题</li>
+</ul>
+<h2 id="计算几何学-2"><a href="#计算几何学-2" class="headerlink" title="计算几何学"></a>计算几何学</h2><p>(1) 半平面求交(POJ3384, POJ2540)<br>(2) 可视图的建立(POJ2966)<br>(3) 点集最小圆覆盖.<br>(4) 对踵点(POJ2079)</p>
+<p><font size="6px" color="orange"><center>综合题</center></font><br>POJ3109, POJ1478, POJ1462, POJ2729, POJ2048, POJ3336, POJ3315, POJ2148, POJ1263</p>
+<h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><p>1423, 1694, 1723, 1727, 1763, 1788, 1828, 1838, 1840, 2201, 2376, 2377, 2380, 1318, 1877, 1928, 1971, 1974, 1990, 2001, 2002, 2092, 2379,<br>1002（需要字符处理, 排序用快排即可） 1007（稳定的排序） 2159（题意较难懂） 2231<br>2371（简单排序） 2388（顺序统计算法） 2418（二叉排序树）</p>
+<h2 id="搜索、回溯、遍历"><a href="#搜索、回溯、遍历" class="headerlink" title="搜索、回溯、遍历"></a>搜索、回溯、遍历</h2><p>1022, 1111, 1118, 1129, 1190, 1562, 1564, 1573, 1655, 2184, 2225, 2243, 2312, 2362, 2378, 2386, 1010, 1011, 1018, 1020, 1054, 1062, 1256, 1321, 1363, 1501, 1650, 1659, 1664, 1753, 2078, 2083, 2303, 2310, 2329<br>简单：1128, 1166, 1176, 1231, 1256, 1270, 1321, 1543, 1606, 1664, 1731, 1742, 1745, 1847, 1915, 1950, 2038, 2157, 2182, 2183, 2381, 2386, 2426<br>不易：1024, 1054, 1117, 1167, 1708, 1746, 1775, 1878, 1903, 1966, 2046, 2197, 2349<br>推荐：1011, 1190, 1191, 1416, 1579, 1632, 1639, 1659, 1680, 1683, 1691, 1709, 1714, 1753, 1771, 1826, 1855, 1856, 1890, 1924, 1935, 1948, 1979, 1980, 2170, 2288, 2331, 2339, 2340, 1979（和迷宫类似） 1980（对剪枝要求较高）</p>
+<h2 id="历法"><a href="#历法" class="headerlink" title="历法"></a>历法</h2><p>1008 2080 （这种题要小心）</p>
+<h2 id="枚举"><a href="#枚举" class="headerlink" title="枚举"></a>枚举</h2><p>1012, 1046, 1387, 1411, 2245, 2326, 2363, 2381, 1054（剪枝要求较高）, 1650(小数的精度问题）</p>
+<h2 id="数据结构的典型算法"><a href="#数据结构的典型算法" class="headerlink" title="数据结构的典型算法"></a>数据结构的典型算法</h2><p>容易：1182, 1656, 2021, 2023, 2051, 2153, 2227, 2236, 2247, 2352, 2395<br>不易：1145, 1177, 1195, 1227, 1661, 1834<br>推荐：1330, 1338, 1451, 1470, 1634, 1689, 1693, 1703, 1724, 1988, 2004, 2010, 2119, 2274, 1125(弗洛伊德算法), 2421（图的最小生成树）</p>
+<h2 id="动态规划-3"><a href="#动态规划-3" class="headerlink" title="动态规划"></a>动态规划</h2><p>1037 A decorative fence, 1050 To the Max, 1088 滑雪, 1125 Stockbroker Grapevine, 1141 Brackets Sequence, 1159 Palindrome, 1160 Post Office, 1163 The Triangle, 1458 Common Subsequence, 1579 Function Run Fun, 1887 Testing the CATCHER, 1953 World Cup Noise, 2386 Lake Counting<br>容易：1018, 1050, 1083, 1088, 1125, 1143, 1157, 1163, 1178, 1179, 1189, 1208, 1276, 1322, 1414, 1456, 1458, 1609, 1644, 1664, 1690, 1699, 1740, 1742, 1887, 1926, 1936, 1952, 1953, 1958, 1959, 1962, 1975, 1989, 2018, 2029, 2033, 2063, 2081, 2082, 2181, 2184, 2192, 2231, 2279, 2329, 2336, 2346, 2353, 2355, 2356, 2385, 2392, 2424<br>不易：1019, 1037, 1080, 1112, 1141, 1170, 1192, 1239, 1655, 1695, 1707, 1733, 1737, 1837, 1850, 1920, 1934, 1937, 1964, 2039, 2138, 2151, 2161, 2178<br>推荐：1015, 1635, 1636, 1671, 1682, 1692, 1704, 1717, 1722, 1726, 1732, 1770, 1821, 1853, 1949, 2019, 2127, 2176, 2228, 2287, 2342, 2374, 2378, 2384, 2411</p>
+<h2 id="贪心"><a href="#贪心" class="headerlink" title="贪心"></a>贪心</h2><p>1042, 1065, 1230, 1784, 1328 1755（或用单纯形方法）, 2054, 1017, 1328, 1862, 1922, 2054, 2209, 2313, 2325, 2370</p>
+<h2 id="模拟"><a href="#模拟" class="headerlink" title="模拟"></a>模拟</h2><p>容易：1006, 1008, 1013, 1016, 1017, 1169, 1298, 1326, 1350, 1363, 1676, 1786, 1791, 1835, 1970, 2317, 2325, 2390,<br>不易：1012, 1082, 1099, 1114, 1642, 1677, 1684, 1886, 1281 1928 2083 2141 2015</p>
+<h2 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h2><p>1664</p>
+<h2 id="字符串处理"><a href="#字符串处理" class="headerlink" title="字符串处理"></a>字符串处理</h2><p>1488, 1598, 1686, 1706, 1747, 1748, 1750, 1760, 1782, 1790, 1866, 1888, 1896, 1951, 2003, 2121, 2141, 2145, 2159, 2337, 2359, 2372, 2406, 2408, 1016 1051 1126 1318 1572 1917, 1936, 2039, 2083, 2136, 2271, 2317, 2330, 2121, 2403</p>
+<h2 id="数论"><a href="#数论" class="headerlink" title="数论"></a>数论</h2><p>1006, 1014, 1023, 1061, 1152, 1183, 1730, 2262</p>
+<h2 id="几何有关的题目"><a href="#几何有关的题目" class="headerlink" title="几何有关的题目"></a>几何有关的题目</h2><p>凸包：1113, 1228, 1794, 2007, 2187, 1113 wall, 2187 beauty contest<br>容易：1319, 1654, 1673, 1675, 1836, 2074, 2137, 2318<br>不易：1685, 1687, 1696, 1873, 1901, 2172, 2333</p>
+<h2 id="任意精度运算、数字游戏、高精度计算"><a href="#任意精度运算、数字游戏、高精度计算" class="headerlink" title="任意精度运算、数字游戏、高精度计算"></a>任意精度运算、数字游戏、高精度计算</h2><p>1001, 1023, 1047, 1060, 1079, 1131, 1140, 1142, 1207, 1220, 1284, 1289, 1306, 1316, 1338, 1405, 1454, 1503, 1504, 1519, 1565, 1650, 1969, 2000, 2006, 2081, 2247, 2262, 2305, 2316, 2389, 1001, 1220, 1405, 1503, 1001（高精度乘法）, 2413(高精度加法, 还有二分查找)</p>
+<h2 id="概率统计"><a href="#概率统计" class="headerlink" title="概率统计"></a>概率统计</h2><p>1037, 1050</p>
+<h2 id="小费用最大流、最大流"><a href="#小费用最大流、最大流" class="headerlink" title="小费用最大流、最大流"></a>小费用最大流、最大流</h2><p>2195 going home<br>2400 supervisor<br>supervisee<br>1087 a plug for UNIX<br>1149 PIGS<br>1273 drainage ditches<br>1274 the perfect stall<br>1325 machine schedule<br>1459 power network<br>2239 selecting courses</p>
+<h2 id="压缩存储的DP"><a href="#压缩存储的DP" class="headerlink" title="压缩存储的DP"></a>压缩存储的DP</h2><p>1038 bugs integrated inc<br>1185 炮兵阵地<br>2430 lazy cow</p>
+<h2 id="最长公共子串（LCS）"><a href="#最长公共子串（LCS）" class="headerlink" title="最长公共子串（LCS）"></a>最长公共子串（LCS）</h2><p>1080 human gene functions<br>1159 palindrome<br>1458 common subsequence<br>2192 zipper</p>
+<h2 id="图论及组合数学"><a href="#图论及组合数学" class="headerlink" title="图论及组合数学"></a>图论及组合数学</h2><p>2421 Constructing Roads<br>2369 Permutations<br>2234 Matches Game<br>2243 Knight Moves<br>2249 Binomial Showdown<br>2255 Tree Recovery<br>2084 Game of Connections<br>1906 Three powers<br>1833 排列<br>1850 Code<br>1562 Oil Deposits<br>1496 Word Index<br>1306 Combinations<br>1125 Stockbroker Grapevine<br>1129 Channel Allocation<br>1146 ID Codes<br>1095 Trees Made to Order </p>
+<h2 id="找规律"><a href="#找规律" class="headerlink" title="找规律"></a>找规律</h2><p>2247 Humble Numbers<br>2309 BST<br>2346 Lucky tickets<br>2370 Democracy in danger<br>2365 Rope<br>2101 Honey and Milk Land<br>2028 When Can We Meet?<br>2084 Game of Connections<br>1915 Knight Moves<br>1922 Ride to School<br>1941 The Sierpinski Fractal<br>1953 World Cup Noise<br>1958 Strange Towers of Hanoi<br>1969 Count on Canton<br>1806 Manhattan 2025<br>1809 Regetni<br>1844 Sum<br>1870 Bee Breeding<br>1702 Eva\’s Balance<br>1728 A flea on a chessboard<br>1604 Just the Facts<br>1642 Stacking Cubes<br>1656 Counting Black<br>1657 Distance on Chessboard<br>1662 CoIns<br>1663 Number Steps<br>1313 Booklet Printing<br>1316 Self Numbers<br>1320 Street Numbers<br>1323 Game Prediction<br>1338 Ugly Numbers<br>1244 Slots of Fun<br>1250 Tanning Salon<br>1102 LC-Display<br>1147 Binary codes<br>1013 Counterfeit Dollar</p>
+<h2 id="博弈类"><a href="#博弈类" class="headerlink" title="博弈类"></a>博弈类</h2><p>1067 取石子游戏<br>1740 A New Stone Game<br>2234 Matches Game<br>1082 Calendar Game<br>2348 Euclid\’s Game<br>2413 How many Fibs?<br>2419 Forest</p>
+<h2 id="简单、模拟题"><a href="#简单、模拟题" class="headerlink" title="简单、模拟题"></a>简单、模拟题</h2><p>1001 Exponentiation<br>1002 487-3279<br>1003 Hangover<br>1701 Dissatisfying Lift<br>2301 Beat the Spread!<br>2304 Combination Lock<br>2328 Guessing Game<br>2403 Hay Points<br>2406 Power Strings<br>2339 Rock, Scissors, Paper<br>2350 Above Average<br>2218 Does This Make Me Look Fat?<br>2260 Error Correction<br>2262 Goldbach\’s Conjecture<br>2272 Bullseye<br>2136 Vertical Histogram<br>2174 Decoding Task<br>2183 Bovine Math Geniuses<br>2000 Gold Coins<br>2014 Flow Layout<br>2051 Argus<br>2081 Calendar<br>1918 Ranking List<br>1922 Ride to School<br>1970 The Game<br>1972 Dice Stacking<br>1974 The Happy Worm<br>1978 Hanafuda Shuffle<br>1979 Red and Black<br>1617 Crypto Columns<br>1666 Candy Sharing Game<br>1674 Sorting by Swapping<br>1503 Integer Inquiry<br>1504 Adding Reversed Numbers<br>1528 Perfection<br>1546 Basically Speaking<br>1547 Clay Bully<br>1573 Robot Motion<br>1575 Easier Done Than Said?<br>1581 A Contesting Decision<br>1590 Palindromes<br>1454 Factorial Frequencies<br>1363 Rails<br>1218 THE DRUNK JAILER<br>1281 MANAGER<br>1132 Border<br>1028 Web Navigation</p>
+<h2 id="初等数学"><a href="#初等数学" class="headerlink" title="初等数学"></a>初等数学</h2><p>1003 Hangover<br>1045 Bode Plot<br>1254 Hansel and Grethel<br>1269 Intersecting Lines<br>1401 Factorial<br>1410 Intersection<br>2363 Blocks<br>2365 Rope<br>2242 The Circumference of the Circle<br>2291 Rotten Ropes<br>2295 A DP Problem<br>2126 Factoring a Polynomial<br>2191 Mersenne Composite Numbers<br>2196 Specialized Four-Digit Numbers<br>1914 Cramer\’s Rule<br>1835 宇航员<br>1799 Yeehaa!<br>1607 Deck<br>1244 Slots of Fun<br>1269 Intersecting Lines<br>1299 Polar Explorer<br>1183 反正切函数的应用</p>
+<h2 id="匹配"><a href="#匹配" class="headerlink" title="匹配"></a>匹配</h2><p>1274, 1422, 1469, 1719, 2060, 2239</p>
+<h2 id="经典"><a href="#经典" class="headerlink" title="经典"></a>经典</h2><p>1011（搜索好题） Finished<br>1012（学会打表） Finished<br>1013<br>1019（它体现了很多此类问题的特点） Finished<br>1050（绝对经典的dp） Finished<br>1088（dp好题） Finished<br>1157（花店, 经典的dp） Finished<br>1163（怎么经典的dp那么多呀？？？） Finished<br>1328（贪心） Finished<br>1458（最长公共子序列）<br>1647（很好的真题, 考临场分析准确和下手迅速）<br>1654（学会多边形面积的三角形求法）<br>1655（一类无根树的dp问题）<br>1804（逆序对）<br>2084（经典组合数学问题）<br>2187（用凸包求最远点对, 求出凸包后应该有O(N)的求法, 可我就是调不出来）<br>2195（二分图的最佳匹配）<br>2242（计算几何经典）<br>2295（等式处理）<br>2353（dp, 但要记录最佳路径）<br>2354（立体解析几何）<br>2362（搜索好题）<br>2410（读懂题是关键）<br>2411（经典dp）</p>
+<h2 id="趣味"><a href="#趣味" class="headerlink" title="趣味"></a>趣味</h2><p>1067（很难的数学, 但仔细研究, 是一片广阔的领域）<br>1147（有O(n)的算法, 需要思考）<br>1240（直到一棵树的先序和后序遍历, 那么有几种中序遍历呢？dp）<br>1426（是数论吗？错, 是图论！）<br>1648（别用计算几何, 用整点这个特点绕过精度的障碍吧）<br>1833（找规律）<br>1844（貌似dp或是搜索, 其实是道有趣的数学题）<br>1922（贪心, 哈哈）<br>2231<br>2305（不需要高精度噢）<br>2328（要仔细噢）<br>2356（数论知识）<br>2359（约瑟夫问题变种）<br>2392（有趣的问题）</p>
+<h2 id="很繁的题"><a href="#很繁的题" class="headerlink" title="很繁的题"></a>很繁的题</h2><p>1001<br>1008<br>1087（构图很烦, 还有二分图的最大匹配）<br>1128（USACO）<br>1245<br>1329<br>1550（考的是读题和理解能力）<br>1649（dp）<br>2200（字符串处理+枚举）<br>2358（枚举和避免重复都很烦）<br>2361（仔细仔细再仔细）</p>
+<h2 id="难题"><a href="#难题" class="headerlink" title="难题"></a>难题</h2><p>1014（数学证明比较难, 但有那种想法更重要）<br>1037（比较难的dp）<br>1405（高精度算法也分有等级之分, 不断改进吧）<br>2002（不知道有没有比O(n^2*logn)更优的算法？）<br>2054（极难, 很强的思考能力）<br>2085（组合数学）<br>2414（dp, 但要剪枝）<br>2415（搜索）<br>2423（计算几何+统计）</p>
+<h2 id="多解题"><a href="#多解题" class="headerlink" title="多解题"></a>多解题</h2><p>1002（可以用排序, 也可以用统计的方法）<br>1338（搜索和dp都可以）<br>1664（搜索和dp都练一练吧）<br>2082（这可是我讲的题噢）<br>2352（桶排和二叉树都行）</p>
+<h2 id="Note"><a href="#Note" class="headerlink" title="Note:"></a>Note:</h2><p>1011: 很经典的剪支<br>1014: 难在数学上<br>1017: 严格的数学证明貌似不容易<br>1021: 有点繁, 考察对图形进行各种旋转的处理<br>1083: 巧妙的思考角度<br>1150: 分奇偶讨论, lg(n)算法<br>1218: 三行就够了, 虽然简单, 但也有优劣之别<br>1505: 二分加贪心<br>1654: 做法也许很多吧, 本人用有向面积做的<br>1674: 计算圈的个数(算是graph 吧)<br>1700: 数学证明不容易<br>1742: O(m*n)的算法<br>1863: 要耐心地慢慢写…^_^<br>1988: 并查集<br>2051: 堆<br>2078: 不难, 但剪支可以做到很好<br>2082: O(n), 你想到了吗？<br>2084: 卡特兰数<br>2182: 线段树<br>2195: 最小费用最大流<br>2234: 经典博弈算法<br>2236: 并查集<br>2299: 二分思想<br>2395: Kruskal 最小生成树的拓展<br>2406: KMP<br>2411: 用二进制串来表示状态</p>
+
+      
+      
+    </div>
+    
+  </div>
+  
+    
+
+
+<nav id="article-nav">
+  
+    <a href="../../22/组合数学学习/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          组合数学学习
+        
+      </div>
+    </a>
+  
+  
+    <a href="../../16/codeforces870+871/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">codeforces870+871</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Date：2017-11-27"><span class="toc-number">1.1.</span> <span class="toc-text">Date：2017/11/27</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Date：2017-10-18"><span class="toc-number">1.2.</span> <span class="toc-text">Date：2017/10/18</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#基本算法"><span class="toc-number">2.</span> <span class="toc-text">基本算法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#图算法"><span class="toc-number">3.</span> <span class="toc-text">图算法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据结构"><span class="toc-number">4.</span> <span class="toc-text">数据结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#简单搜索"><span class="toc-number">5.</span> <span class="toc-text">简单搜索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#动态规划"><span class="toc-number">6.</span> <span class="toc-text">动态规划</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数学"><span class="toc-number">7.</span> <span class="toc-text">数学</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#计算几何学"><span class="toc-number">8.</span> <span class="toc-text">计算几何学</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#基本算法-1"><span class="toc-number">9.</span> <span class="toc-text">基本算法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#图算法-1"><span class="toc-number">10.</span> <span class="toc-text">图算法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据结构-1"><span class="toc-number">11.</span> <span class="toc-text">数据结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#搜索"><span class="toc-number">12.</span> <span class="toc-text">搜索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#动态规划-1"><span class="toc-number">13.</span> <span class="toc-text">动态规划</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数学-1"><span class="toc-number">14.</span> <span class="toc-text">数学</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#计算几何学-1"><span class="toc-number">15.</span> <span class="toc-text">计算几何学</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#基本算法要求"><span class="toc-number">16.</span> <span class="toc-text">基本算法要求</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#图算法-2"><span class="toc-number">17.</span> <span class="toc-text">图算法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据结构-2"><span class="toc-number">18.</span> <span class="toc-text">数据结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#搜索-1"><span class="toc-number">19.</span> <span class="toc-text">搜索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#动态规划-2"><span class="toc-number">20.</span> <span class="toc-text">动态规划</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数学-2"><span class="toc-number">21.</span> <span class="toc-text">数学</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#计算几何学-2"><span class="toc-number">22.</span> <span class="toc-text">计算几何学</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#排序"><span class="toc-number">23.</span> <span class="toc-text">排序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#搜索、回溯、遍历"><span class="toc-number">24.</span> <span class="toc-text">搜索、回溯、遍历</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#历法"><span class="toc-number">25.</span> <span class="toc-text">历法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#枚举"><span class="toc-number">26.</span> <span class="toc-text">枚举</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据结构的典型算法"><span class="toc-number">27.</span> <span class="toc-text">数据结构的典型算法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#动态规划-3"><span class="toc-number">28.</span> <span class="toc-text">动态规划</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#贪心"><span class="toc-number">29.</span> <span class="toc-text">贪心</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#模拟"><span class="toc-number">30.</span> <span class="toc-text">模拟</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#递归"><span class="toc-number">31.</span> <span class="toc-text">递归</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#字符串处理"><span class="toc-number">32.</span> <span class="toc-text">字符串处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数论"><span class="toc-number">33.</span> <span class="toc-text">数论</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#几何有关的题目"><span class="toc-number">34.</span> <span class="toc-text">几何有关的题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#任意精度运算、数字游戏、高精度计算"><span class="toc-number">35.</span> <span class="toc-text">任意精度运算、数字游戏、高精度计算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#概率统计"><span class="toc-number">36.</span> <span class="toc-text">概率统计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#小费用最大流、最大流"><span class="toc-number">37.</span> <span class="toc-text">小费用最大流、最大流</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#压缩存储的DP"><span class="toc-number">38.</span> <span class="toc-text">压缩存储的DP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#最长公共子串（LCS）"><span class="toc-number">39.</span> <span class="toc-text">最长公共子串（LCS）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#图论及组合数学"><span class="toc-number">40.</span> <span class="toc-text">图论及组合数学</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#找规律"><span class="toc-number">41.</span> <span class="toc-text">找规律</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#博弈类"><span class="toc-number">42.</span> <span class="toc-text">博弈类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#简单、模拟题"><span class="toc-number">43.</span> <span class="toc-text">简单、模拟题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#初等数学"><span class="toc-number">44.</span> <span class="toc-text">初等数学</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#匹配"><span class="toc-number">45.</span> <span class="toc-text">匹配</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#经典"><span class="toc-number">46.</span> <span class="toc-text">经典</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#趣味"><span class="toc-number">47.</span> <span class="toc-text">趣味</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#很繁的题"><span class="toc-number">48.</span> <span class="toc-text">很繁的题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#难题"><span class="toc-number">49.</span> <span class="toc-text">难题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#多解题"><span class="toc-number">50.</span> <span class="toc-text">多解题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Note"><span class="toc-number">51.</span> <span class="toc-text">Note:</span></a></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+
+
+
+
+
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="../../22/组合数学学习/" title="上一篇: 组合数学学习">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="../../16/codeforces870+871/" title="下一篇: codeforces870+871">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="../../../11/03/回忆建兰/">回忆建兰</a></li><li class="post-list-item"><a class="post-list-link" href="../../../11/01/POJ刷题历程/">POJ刷题历程</a></li><li class="post-list-item"><a class="post-list-link" href="../../29/Top-k问题/">Top-k问题</a></li><li class="post-list-item"><a class="post-list-link" href="../../23/重学Segment-Tree/">重学Segment Tree</a></li><li class="post-list-item"><a class="post-list-link" href="../../22/组合数学学习/">组合数学学习</a></li><li class="post-list-item"><a class="post-list-link" href="">POJ刷题</a></li><li class="post-list-item"><a class="post-list-link" href="../../16/codeforces870+871/">codeforces870+871</a></li><li class="post-list-item"><a class="post-list-link" href="../../12/MathJax语法学习/">MathJax语法学习</a></li><li class="post-list-item"><a class="post-list-link" href="../../12/初赛知识点整理/">NOIP初赛准备</a></li><li class="post-list-item"><a class="post-list-link" href="../../12/hexo搭建过程学习/">hexo搭建过程学习</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2018 Samsara_Karma
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >OIer到访量: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="../../../../js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 9;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+  </div>
+</body>
+</html>

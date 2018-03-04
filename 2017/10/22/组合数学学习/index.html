@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>组合数学学习 | Samsara_Karma</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="简介被数竞dalao虐惨了QAQ，好好学组合数学&amp;lt;巨坑待填&amp;gt;">
+<meta name="keywords" content="OI-复赛,组合数学">
+<meta property="og:type" content="article">
+<meta property="og:title" content="组合数学学习">
+<meta property="og:url" content="http://yoursite.com/2017/10/22/组合数学学习/index.html">
+<meta property="og:site_name" content="Samsara_Karma">
+<meta property="og:description" content="简介被数竞dalao虐惨了QAQ，好好学组合数学&amp;lt;巨坑待填&amp;gt;">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:updated_time" content="2017-10-31T13:01:44.704Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="组合数学学习">
+<meta name="twitter:description" content="简介被数竞dalao虐惨了QAQ，好好学组合数学&amp;lt;巨坑待填&amp;gt;">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="../../../../css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/',
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/head.jpg" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/" title="Hi Mate">Samsara_Karma</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">For OI And Math</p>
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="../../../../index.html">博客首页</a></li>
+                        
+                            <li><a href="../../../../tags/OI-初赛">初赛学习</a></li>
+                        
+                            <li><a href="../../../../tags/OI-复赛">复赛学习</a></li>
+                        
+                            <li><a href="../../../../tags/杂记">往事回忆</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="https://mail.qq.com/cgi-bin/frame_html?sid=rygbwhxi7HuqbzRt&r=c568a03d1a11c72df41290223be69d55" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/SamsaraKarma" title="github">github</a>
+                            
+                                <a class="fl zhihu" target="_blank" href="https://www.zhihu.com" title="zhihu">zhihu</a>
+                            
+                                <a class="fl QQ" target="_blank" href="https://user.qzone.qq.com/1536679559" title="QQ">QQ</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="../../../../tags/OI-初赛/" style="font-size: 10px;">OI-初赛</a> <a href="../../../../tags/OI-复赛/" style="font-size: 20px;">OI-复赛</a> <a href="../../../../tags/POJ/" style="font-size: 15px;">POJ</a> <a href="../../../../tags/codeforces/" style="font-size: 10px;">codeforces</a> <a href="../../../../tags/web搭建/" style="font-size: 10px;">web搭建</a> <a href="../../../../tags/实时赛/" style="font-size: 10px;">实时赛</a> <a href="../../../../tags/常用语法学习/" style="font-size: 10px;">常用语法学习</a> <a href="../../../../tags/数据结构/" style="font-size: 10px;">数据结构</a> <a href="../../../../tags/杂记/" style="font-size: 10px;">杂记</a> <a href="../../../../tags/极值问题/" style="font-size: 10px;">极值问题</a> <a href="../../../../tags/模板/" style="font-size: 10px;">模板</a> <a href="../../../../tags/组合数学/" style="font-size: 10px;">组合数学</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.cnblogs.com/Dance-Of-Faith">Dance_Of_Faith</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.cnblogs.com/logic-yzf">logic-yzf</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://tkandi.github.io">tkandi</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://anthonyledger.github.io">Deluxurous</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://orbitingflea.github.io">orbitingflea</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.csdn.net/functionendless">functionendless</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://foreverpiano.cf">foreverpiano</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://tenecnt.github.io">tenecnt</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.csdn.net/effervescence/">effervescence</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.cnblogs.com/whc200305/">pinkex</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.csdn.net/qq_39992190">CalvinJin</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">有疑问联系作者QQ:1536679559</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>           
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">Samsara_Karma</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/head.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="Me">Samsara_Karma</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">For OI And Math</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="../../../../index.html">博客首页</a></li>
+                
+                    <li><a href="../../../../tags/OI-初赛">初赛学习</a></li>
+                
+                    <li><a href="../../../../tags/OI-复赛">复赛学习</a></li>
+                
+                    <li><a href="../../../../tags/杂记">往事回忆</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="https://mail.qq.com/cgi-bin/frame_html?sid=rygbwhxi7HuqbzRt&r=c568a03d1a11c72df41290223be69d55" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/SamsaraKarma" title="github">github</a>
+                    
+                        <a class="zhihu" target="_blank" href="https://www.zhihu.com" title="zhihu">zhihu</a>
+                    
+                        <a class="QQ" target="_blank" href="https://user.qzone.qq.com/1536679559" title="QQ">QQ</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-组合数学学习" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="" class="article-date">
+      <time datetime="2017-10-22T11:47:47.000Z" itemprop="datePublished">2017-10-22</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      组合数学学习
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/OI-复赛/">OI-复赛</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/组合数学/">组合数学</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>被数竞dalao虐惨了QAQ，好好学组合数学<br>&lt;巨坑待填&gt;</p>
+<a id="more"></a>
+<h2 id="第一章-什么是组合数学"><a href="#第一章-什么是组合数学" class="headerlink" title="第一章 什么是组合数学"></a>第一章 什么是组合数学</h2><ul>
+<li><strong><font size="4px" color="white">第一个栗子: 棋盘的完美覆盖</font></strong></li>
+</ul>
+<h3 id="考虑一张棋盘，假设有一些形状相同的1-2的多米诺骨牌，是否能在没有两张牌重叠，且在每张牌覆盖两个方块的条件下覆盖棋盘上的所有方格"><a href="#考虑一张棋盘，假设有一些形状相同的1-2的多米诺骨牌，是否能在没有两张牌重叠，且在每张牌覆盖两个方块的条件下覆盖棋盘上的所有方格" class="headerlink" title="考虑一张棋盘，假设有一些形状相同的1*2的多米诺骨牌，是否能在没有两张牌重叠，且在每张牌覆盖两个方块的条件下覆盖棋盘上的所有方格"></a>考虑一张棋盘，假设有一些形状相同的1*2的多米诺骨牌，是否能在没有两张牌重叠，且在每张牌覆盖两个方块的条件下覆盖棋盘上的所有方格</h3><p>对于完美覆盖是否存在，我们可以将棋盘用<font color="orange">橙色</font>和<font color="green">绿色</font>来交替染色，如果两种颜色染的数量不相同，则不存在完美覆盖</p>
+<h3 id="将多米诺骨牌覆盖两种颜色扩展到b种颜色，即采用1-b的骨牌进行覆盖，有以下结论"><a href="#将多米诺骨牌覆盖两种颜色扩展到b种颜色，即采用1-b的骨牌进行覆盖，有以下结论" class="headerlink" title="将多米诺骨牌覆盖两种颜色扩展到b种颜色，即采用1*b的骨牌进行覆盖，有以下结论:"></a>将多米诺骨牌覆盖两种颜色扩展到b种颜色，即采用1*b的骨牌进行覆盖，有以下结论:</h3><p>m*n棋盘有b格牌的完美覆盖当且仅当b是m的一个因子或者是n的一个因子<br>如果完美覆盖中所有b格牌都是水平放置或者所有b格牌都是垂直放置，则称这样的完美b格牌覆盖是平凡的，于是m*n棋盘有b格牌覆盖的完美覆盖当且仅当它有平凡覆盖</p>
+<ul>
+<li><strong><font size="4px" color="white">第二个栗子: 幻方</font></strong></li>
+</ul>
+<h3 id="n阶幻方中所有整数的和是"><a href="#n阶幻方中所有整数的和是" class="headerlink" title="n阶幻方中所有整数的和是"></a>n阶幻方中所有整数的和是</h3><p>$1\ +\ 2\ +\ 3\ +\ …\ +\ n^2\ =\ (\frac{n^2\ *\ (n^2\ +\ 1)}{2})$</p>
+<h3 id="la-Loubere构造法-n为奇数"><a href="#la-Loubere构造法-n为奇数" class="headerlink" title="la Loubère构造法(n为奇数)"></a>la Loubère构造法(n为奇数)</h3><p>先把1放在第一行的中间，之后的整数按照它们的自然顺序放置在从左下方到右上方的一条对角线上，做如下修正:<br>（1）当到达第一行时，下一个整数的放置位置使: 它所处的行是最后一行，所处的列是紧跟着前一个整数所处列的后面一列<br>（2）当到达最右边的一列时，下一个整数的放置位置是: 它所处的列是最左边的列(即第一列)，它所处的行是紧跟着前一个整数所处行的下一行<br>（3）当达到一个已经填上数的方格或者已经达到幻方的右上角时，下一个整数放置的位置是填写上一个数的方格的直接下方</p>
+<p><strong>简而言之，对于当前的格子(x, y)，下一个数字放置的位置就是当前格子的右下方(x + 1, y + 1)，如果超出范围就重新回到最左边或者最上边，如果(x + 1, y + 1)格子已经被填就填在当前格子的正下方(x + 1, y)，超出范围同上处理</strong></p>
+<script type="math/tex; mode=display">\begin{bmatrix}
+{17}&{24}&{1}&{8}&{15}\\
+{23}&{5}&{7}&{14}&{16}\\
+{4}&{6}&{13}&{20}&{22}\\
+{10}&{12}&{19}&{21}&{3}\\
+{11}&{18}&{25}&{2}&{9}\\
+\end{bmatrix}</script><p>以上是一个根据la Loubère构造法构造的一个五阶幻方</p>
+<ul>
+<li><strong><font size="4px" color="white">第三个栗子：四色问题</font></strong></li>
+</ul>
+<p>仅用四种颜色便可以给每一张平面地图着色</p>
+<ul>
+<li><strong><font size="4px" color="white">第四个栗子：36军官问题</font></strong></li>
+</ul>
+<p>看不懂QAQ（待填坑）</p>
+<ul>
+<li><strong><font size="4px" color="white">第五个栗子：最短路径问题</font></strong></li>
+</ul>
+<p>假装跑个dijkstra（等学了组合数学中图那套理论再回来看）</p>
+<ul>
+<li><strong><font size="4px" color="white">第六个栗子：相互重叠的圆</font></strong></li>
+</ul>
+<p>考虑平面上以相互重叠的n个圆$\gamma_1,\gamma_2$,…,$\gamma_n$。<br>将互相重叠定义为每一对圆相交于两个不同点</p>
+<p>如此构造的区域的数量$h_n = n^2 - n + 2$</p>
+<ul>
+<li><strong><font size="4px" color="white">第七个栗子：Nim游戏</font></strong></li>
+</ul>
+
+      
+      
+    </div>
+    
+  </div>
+  
+    
+
+
+<nav id="article-nav">
+  
+    <a href="../../23/重学Segment-Tree/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          重学Segment Tree
+        
+      </div>
+    </a>
+  
+  
+    <a href="../../18/POJ刷题/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">POJ刷题</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第一章-什么是组合数学"><span class="toc-number">2.</span> <span class="toc-text">第一章 什么是组合数学</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#考虑一张棋盘，假设有一些形状相同的1-2的多米诺骨牌，是否能在没有两张牌重叠，且在每张牌覆盖两个方块的条件下覆盖棋盘上的所有方格"><span class="toc-number">2.1.</span> <span class="toc-text">考虑一张棋盘，假设有一些形状相同的1*2的多米诺骨牌，是否能在没有两张牌重叠，且在每张牌覆盖两个方块的条件下覆盖棋盘上的所有方格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#将多米诺骨牌覆盖两种颜色扩展到b种颜色，即采用1-b的骨牌进行覆盖，有以下结论"><span class="toc-number">2.2.</span> <span class="toc-text">将多米诺骨牌覆盖两种颜色扩展到b种颜色，即采用1*b的骨牌进行覆盖，有以下结论:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#n阶幻方中所有整数的和是"><span class="toc-number">2.3.</span> <span class="toc-text">n阶幻方中所有整数的和是</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#la-Loubere构造法-n为奇数"><span class="toc-number">2.4.</span> <span class="toc-text">la Loubère构造法(n为奇数)</span></a></li></ol></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+
+
+
+
+
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="../../23/重学Segment-Tree/" title="上一篇: 重学Segment Tree">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="../../18/POJ刷题/" title="下一篇: POJ刷题">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="../../../11/03/回忆建兰/">回忆建兰</a></li><li class="post-list-item"><a class="post-list-link" href="../../../11/01/POJ刷题历程/">POJ刷题历程</a></li><li class="post-list-item"><a class="post-list-link" href="../../29/Top-k问题/">Top-k问题</a></li><li class="post-list-item"><a class="post-list-link" href="../../23/重学Segment-Tree/">重学Segment Tree</a></li><li class="post-list-item"><a class="post-list-link" href="">组合数学学习</a></li><li class="post-list-item"><a class="post-list-link" href="../../18/POJ刷题/">POJ刷题</a></li><li class="post-list-item"><a class="post-list-link" href="../../16/codeforces870+871/">codeforces870+871</a></li><li class="post-list-item"><a class="post-list-link" href="../../12/MathJax语法学习/">MathJax语法学习</a></li><li class="post-list-item"><a class="post-list-link" href="../../12/初赛知识点整理/">NOIP初赛准备</a></li><li class="post-list-item"><a class="post-list-link" href="../../12/hexo搭建过程学习/">hexo搭建过程学习</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2018 Samsara_Karma
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >OIer到访量: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="../../../../js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 9;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+  </div>
+</body>
+</html>

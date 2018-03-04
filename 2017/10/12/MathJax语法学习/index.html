@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>MathJax语法学习 | Samsara_Karma</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="简介学习怎么在hexo中使用MathJex时顺便学习一下MathJex的常用语法">
+<meta name="keywords" content="常用语法学习">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MathJax语法学习">
+<meta property="og:url" content="http://yoursite.com/2017/10/12/MathJax语法学习/index.html">
+<meta property="og:site_name" content="Samsara_Karma">
+<meta property="og:description" content="简介学习怎么在hexo中使用MathJex时顺便学习一下MathJex的常用语法">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:updated_time" content="2017-10-24T10:13:03.140Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MathJax语法学习">
+<meta name="twitter:description" content="简介学习怎么在hexo中使用MathJex时顺便学习一下MathJex的常用语法">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="../../../../css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/',
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/head.jpg" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/" title="Hi Mate">Samsara_Karma</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">For OI And Math</p>
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="../../../../index.html">博客首页</a></li>
+                        
+                            <li><a href="../../../../tags/OI-初赛">初赛学习</a></li>
+                        
+                            <li><a href="../../../../tags/OI-复赛">复赛学习</a></li>
+                        
+                            <li><a href="../../../../tags/杂记">往事回忆</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="https://mail.qq.com/cgi-bin/frame_html?sid=rygbwhxi7HuqbzRt&r=c568a03d1a11c72df41290223be69d55" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/SamsaraKarma" title="github">github</a>
+                            
+                                <a class="fl zhihu" target="_blank" href="https://www.zhihu.com" title="zhihu">zhihu</a>
+                            
+                                <a class="fl QQ" target="_blank" href="https://user.qzone.qq.com/1536679559" title="QQ">QQ</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="../../../../tags/OI-初赛/" style="font-size: 10px;">OI-初赛</a> <a href="../../../../tags/OI-复赛/" style="font-size: 20px;">OI-复赛</a> <a href="../../../../tags/POJ/" style="font-size: 15px;">POJ</a> <a href="../../../../tags/codeforces/" style="font-size: 10px;">codeforces</a> <a href="../../../../tags/web搭建/" style="font-size: 10px;">web搭建</a> <a href="../../../../tags/实时赛/" style="font-size: 10px;">实时赛</a> <a href="../../../../tags/常用语法学习/" style="font-size: 10px;">常用语法学习</a> <a href="../../../../tags/数据结构/" style="font-size: 10px;">数据结构</a> <a href="../../../../tags/杂记/" style="font-size: 10px;">杂记</a> <a href="../../../../tags/极值问题/" style="font-size: 10px;">极值问题</a> <a href="../../../../tags/模板/" style="font-size: 10px;">模板</a> <a href="../../../../tags/组合数学/" style="font-size: 10px;">组合数学</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.cnblogs.com/Dance-Of-Faith">Dance_Of_Faith</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.cnblogs.com/logic-yzf">logic-yzf</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://tkandi.github.io">tkandi</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://anthonyledger.github.io">Deluxurous</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://orbitingflea.github.io">orbitingflea</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.csdn.net/functionendless">functionendless</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://foreverpiano.cf">foreverpiano</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://tenecnt.github.io">tenecnt</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.csdn.net/effervescence/">effervescence</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.cnblogs.com/whc200305/">pinkex</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.csdn.net/qq_39992190">CalvinJin</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">有疑问联系作者QQ:1536679559</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>           
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">Samsara_Karma</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/head.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="Me">Samsara_Karma</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">For OI And Math</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="../../../../index.html">博客首页</a></li>
+                
+                    <li><a href="../../../../tags/OI-初赛">初赛学习</a></li>
+                
+                    <li><a href="../../../../tags/OI-复赛">复赛学习</a></li>
+                
+                    <li><a href="../../../../tags/杂记">往事回忆</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="https://mail.qq.com/cgi-bin/frame_html?sid=rygbwhxi7HuqbzRt&r=c568a03d1a11c72df41290223be69d55" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/SamsaraKarma" title="github">github</a>
+                    
+                        <a class="zhihu" target="_blank" href="https://www.zhihu.com" title="zhihu">zhihu</a>
+                    
+                        <a class="QQ" target="_blank" href="https://user.qzone.qq.com/1536679559" title="QQ">QQ</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-MathJax语法学习" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="" class="article-date">
+      <time datetime="2017-10-12T02:20:14.000Z" itemprop="datePublished">2017-10-12</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      MathJax语法学习
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/常用语法学习/">常用语法学习</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>学习怎么在hexo中使用MathJex时顺便学习一下MathJex的常用语法</p>
+<a id="more"></a>
+<h2 id="希腊字母"><a href="#希腊字母" class="headerlink" title="希腊字母"></a>希腊字母</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">显示</th>
+<th style="text-align:center">命令</th>
+<th style="text-align:center">显示</th>
+<th style="text-align:center">命令</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">$\alpha$</td>
+<td style="text-align:center">\alpha</td>
+<td style="text-align:center">$\beta$</td>
+<td style="text-align:center">\beta</td>
+</tr>
+<tr>
+<td style="text-align:center">$\gamma$</td>
+<td style="text-align:center">\gamma</td>
+<td style="text-align:center">$\delta$</td>
+<td style="text-align:center">\delta</td>
+</tr>
+<tr>
+<td style="text-align:center">$\epsilon$</td>
+<td style="text-align:center">\epsilon</td>
+<td style="text-align:center">$\zeta$</td>
+<td style="text-align:center">\zeta</td>
+</tr>
+<tr>
+<td style="text-align:center">$\eta$</td>
+<td style="text-align:center">\eta</td>
+<td style="text-align:center">$\theta$</td>
+<td style="text-align:center">\theta</td>
+</tr>
+<tr>
+<td style="text-align:center">$\iota$</td>
+<td style="text-align:center">\iota</td>
+<td style="text-align:center">$\kappa$</td>
+<td style="text-align:center">\kappa</td>
+</tr>
+<tr>
+<td style="text-align:center">$\lambda$</td>
+<td style="text-align:center">\lambda</td>
+<td style="text-align:center">$\mu$</td>
+<td style="text-align:center">\mu</td>
+</tr>
+<tr>
+<td style="text-align:center">$\nu$</td>
+<td style="text-align:center">\nu</td>
+<td style="text-align:center">$\xi$</td>
+<td style="text-align:center">\xi</td>
+</tr>
+<tr>
+<td style="text-align:center">$\pi$</td>
+<td style="text-align:center">\pi</td>
+<td style="text-align:center">$\rho$</td>
+<td style="text-align:center">\rho</td>
+</tr>
+<tr>
+<td style="text-align:center">$\sigma$</td>
+<td style="text-align:center">\sigma</td>
+<td style="text-align:center">$\tau$</td>
+<td style="text-align:center">\tau</td>
+</tr>
+<tr>
+<td style="text-align:center">$\upsilon$</td>
+<td style="text-align:center">\upsilon</td>
+<td style="text-align:center">$\phi$</td>
+<td style="text-align:center">\phi</td>
+</tr>
+<tr>
+<td style="text-align:center">$\chi$</td>
+<td style="text-align:center">\chi</td>
+<td style="text-align:center">$\psi$</td>
+<td style="text-align:center">\psi</td>
+</tr>
+<tr>
+<td style="text-align:center">$\omega$</td>
+<td style="text-align:center">\omge</td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>若需要大写希腊字母，将命令首字母大写即可</li>
+<li>若需要斜体希腊字母，将命令前加上var前缀即可</li>
+</ul>
+<h2 id="字母修饰"><a href="#字母修饰" class="headerlink" title="字母修饰"></a>字母修饰</h2><h3 id="上下标"><a href="#上下标" class="headerlink" title="上下标"></a>上下标</h3><ul>
+<li>上标 : ^</li>
+<li>下标 : _</li>
+<li>栗子 : $C_n^2$</li>
+</ul>
+<h3 id="矢量"><a href="#矢量" class="headerlink" title="矢量"></a>矢量</h3><ul>
+<li><strong>\vec a</strong> 呈现为 $\vec a$</li>
+<li><strong>\overrightarrow{xy}</strong> 呈现为 $\overrightarrow{xy}$</li>
+</ul>
+<h3 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h3><ul>
+<li>Typewrite: <strong>\mathtt{A}</strong> 呈现为 $\mathtt{A}$<ul>
+<li>$\mathtt{balalbala}$</li>
+</ul>
+</li>
+<li>Blackboard Bold: <strong>\mathbb{A}</strong> 呈现为 $\mathbb{A}$<ul>
+<li>$\mathbb{balabala}$</li>
+</ul>
+</li>
+<li>Sans Serif: <strong>\mathsf{A}</strong> 呈现为 $\mathsf{A}$<ul>
+<li>$\mathsf{balabala}$</li>
+</ul>
+</li>
+</ul>
+<h2 id="分组"><a href="#分组" class="headerlink" title="分组"></a>分组</h2><ul>
+<li>使用{}将具有相同等级的内容扩入其中，成组处理</li>
+<li>举例: <strong>10^{10}</strong> 呈现为 $10^{10}$, <strong>10^10</strong> 呈现为 $10^10$</li>
+</ul>
+<h2 id="括号"><a href="#括号" class="headerlink" title="括号"></a>括号</h2><ul>
+<li>小括号 : () 呈现为 $()$</li>
+<li>中括号 : [] 呈现为 $[]$</li>
+<li>尖括号 : \langle,\rangle 呈现为 $\langle\rangle$</li>
+<li>使用\left(或\right)使符号大小与相邻的公式相适应，该语句适用于所有括号类型<ul>
+<li>(\frac{x}{y}) 呈现为 $(\frac{x}{y})$</li>
+<li>而\left(\frac{x}{y}\right) 呈现为 $\left(\frac{x}{y}\right)$</li>
+</ul>
+</li>
+</ul>
+<h2 id="求和、极限与积分"><a href="#求和、极限与积分" class="headerlink" title="求和、极限与积分"></a>求和、极限与积分</h2><ul>
+<li>求和 : \sum<ul>
+<li>栗子 : \sum_{i=1}^n{a_i} 呈现为 $\sum_{i=1}^n{a_i}$</li>
+</ul>
+</li>
+<li>极限 : \lim{x \to digit}<ul>
+<li>栗子 : \lim_{x \to \infty}(1+\frac{1}{x})^=e 呈现为 $\lim_{x\to \infty}(1+\frac{1}{x})^=e$</li>
+</ul>
+</li>
+<li>积分 : \int<ul>
+<li>举例 : \int_0^\infty{fxdx} 呈现为 $\int_0^\infty{fxdx}$</li>
+</ul>
+</li>
+</ul>
+<h2 id="分式和根式"><a href="#分式和根式" class="headerlink" title="分式和根式"></a>分式和根式</h2><ul>
+<li>分式 : \frac{balabala}{balabala} 呈现为 $\frac{balabala}{balabala}$</li>
+<li>根式 : \sqrt[x]{y} 呈现为 $\sqrt[x]{y}$</li>
+</ul>
+<h2 id="特殊函数"><a href="#特殊函数" class="headerlink" title="特殊函数"></a>特殊函数</h2><ul>
+<li>\函数名</li>
+<li>栗子 : \sin x, \ln x, \max(A, B, C) 呈现为 $\sin x$, $\ln x$, $\max(A, B, C)$</li>
+</ul>
+<h2 id="特殊符号"><a href="#特殊符号" class="headerlink" title="特殊符号"></a>特殊符号</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">显示</th>
+<th style="text-align:center">命令</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">$\infty$</td>
+<td style="text-align:center">\infty</td>
+</tr>
+<tr>
+<td style="text-align:center">$\cup$</td>
+<td style="text-align:center">\cup</td>
+</tr>
+<tr>
+<td style="text-align:center">$\cap$</td>
+<td style="text-align:center">\cap</td>
+</tr>
+<tr>
+<td style="text-align:center">$\subset$</td>
+<td style="text-align:center">\subset</td>
+</tr>
+<tr>
+<td style="text-align:center">$\subseteq$</td>
+<td style="text-align:center">\subseteq</td>
+</tr>
+<tr>
+<td style="text-align:center">$\supset$</td>
+<td style="text-align:center">\subset</td>
+</tr>
+<tr>
+<td style="text-align:center">$\in$</td>
+<td style="text-align:center">\in</td>
+</tr>
+<tr>
+<td style="text-align:center">$\notin$</td>
+<td style="text-align:center">\notin</td>
+</tr>
+<tr>
+<td style="text-align:center">$\varnothing$</td>
+<td style="text-align:center">\varnothing</td>
+</tr>
+<tr>
+<td style="text-align:center">$\forall$</td>
+<td style="text-align:center">\forall</td>
+</tr>
+<tr>
+<td style="text-align:center">$\exists$</td>
+<td style="text-align:center">\exists</td>
+</tr>
+<tr>
+<td style="text-align:center">$\lnot$</td>
+<td style="text-align:center">\lnot</td>
+</tr>
+<tr>
+<td style="text-align:center">$\nabla$</td>
+<td style="text-align:center">\nabla</td>
+</tr>
+<tr>
+<td style="text-align:center">$\partial$</td>
+<td style="text-align:center">\partial</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h2><ul>
+<li>LaTeX语法本身会忽略空格的存在</li>
+<li>小空格 : a\ b 呈现为 $a\ b$</li>
+<li>4格空格 : a\quad b 呈现为 $a\quad b$</li>
+</ul>
+<h2 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h2><h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3><ul>
+<li>起始标记\begin{matrix}，结束标记\end{mathix}</li>
+<li>每一行末尾标记\\\\，行间元素以&amp;分隔</li>
+<li>栗子 : <figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$$\begin&#123;matrix&#125;</div><div class="line"><span class="number">1</span>&amp;<span class="number">0</span>&amp;<span class="number">0</span>\\</div><div class="line"><span class="number">0</span>&amp;<span class="number">1</span>&amp;<span class="number">0</span>\\</div><div class="line"><span class="number">0</span>&amp;<span class="number">0</span>&amp;<span class="number">1</span>\\</div><div class="line">\end&#123;matrix&#125;$$</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>呈现为</p>
+<script type="math/tex; mode=display">\begin{matrix}
+1&0&0\\\\
+0&1&0\\\\
+0&0&1\\\\
+\end{matrix}</script><h3 id="矩阵边框"><a href="#矩阵边框" class="headerlink" title="矩阵边框"></a>矩阵边框</h3><ul>
+<li>在起始、结束标记处用下列词替换matrix<ul>
+<li>pmatrix : 小括号边框</li>
+<li>bmatrix : 中括号边框</li>
+<li>Bmatrix : 大括号边框</li>
+<li>vmatrix : 单竖线边框</li>
+<li>Vmatrix : 多竖线边框</li>
+</ul>
+</li>
+</ul>
+<h3 id="省略元素"><a href="#省略元素" class="headerlink" title="省略元素"></a>省略元素</h3><ul>
+<li>横省略号 : \cdots</li>
+<li>竖省略号 : \vdots</li>
+<li>斜省略号 : \ddots</li>
+<li>栗子<figure class="highlight xquery"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$$\begin&#123;bmatrix&#125;</div><div class="line">&#123;a<span class="number">_</span>&#123;<span class="number">11</span>&#125;&#125;&amp;&#123;a<span class="number">_</span>&#123;<span class="number">12</span>&#125;&#125;&amp;&#123;\cdots&#125;&amp;&#123;a<span class="number">_</span>&#123;<span class="number">1</span>n&#125;&#125;\\</div><div class="line">&#123;a<span class="number">_</span>&#123;<span class="number">21</span>&#125;&#125;&amp;&#123;a<span class="number">_</span>&#123;<span class="number">22</span>&#125;&#125;&amp;&#123;\cdots&#125;&amp;&#123;a<span class="number">_</span>&#123;<span class="number">2</span>n&#125;&#125;\\</div><div class="line">&#123;\vdots&#125;&amp;&#123;\vdots&#125;&amp;&#123;\ddots&#125;&amp;&#123;\vdots&#125;\\</div><div class="line">&#123;a<span class="number">_</span>&#123;m1&#125;&#125;&amp;&#123;a<span class="number">_</span>&#123;m2&#125;&#125;&amp;&#123;\cdots&#125;&amp;&#123;a<span class="number">_</span>&#123;mn&#125;&#125;\\</div><div class="line">\<span class="keyword">end</span>&#123;bmatrix&#125;$$</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>呈现为</p>
+<script type="math/tex; mode=display">\begin{bmatrix}
+a_{11}&a_{12}&\cdots&a_{1n}\\\\
+a_{21}&a_{22}&\cdots&a_{2n}\\\\
+\vdots&\vdots&\ddots&\vdots\\\\
+a_{m1}&a_{m2}&\cdots&a_{mn}\\\\
+\end{bmatrix}</script><h2 id="阵列"><a href="#阵列" class="headerlink" title="阵列"></a>阵列</h2><ul>
+<li>同理矩阵，起始、结束处以{array}声明</li>
+<li>对齐方式 ：在{array}后以{}逐行统一声明<ul>
+<li>左对齐 : l; 居中 : c; 右对齐 : r;</li>
+<li>竖直线 : 在声明对齐方式时，插入|建立竖直线</li>
+<li>水平线 ：\hline</li>
+</ul>
+</li>
+<li>栗子 : <figure class="highlight xquery"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$$\begin&#123;array&#125;&#123;c|lll&#125;</div><div class="line">&#123;↓&#125;&amp;&#123;a&#125;&amp;&#123;b&#125;&amp;&#123;c&#125;\\</div><div class="line">\hline</div><div class="line">&#123;R_1&#125;&amp;&#123;c&#125;&amp;&#123;b&#125;&amp;&#123;a&#125;\\</div><div class="line">&#123;R_2&#125;&amp;&#123;b&#125;&amp;&#123;c&#125;&amp;&#123;c&#125;\\</div><div class="line">\<span class="keyword">end</span>&#123;array&#125;$$</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>呈现为</p>
+<script type="math/tex; mode=display">\begin{array}{c|lll}
+{↓}&{a}&{b}&{c}\\\\
+\hline
+{R_1}&{c}&{b}&{a}\\\\
+{R_2}&{b}&{c}&{c}\\\\
+\end{array}</script><h2 id="方程组"><a href="#方程组" class="headerlink" title="方程组"></a>方程组</h2><ul>
+<li>同理矩阵，起始、结束处以{cases}声明</li>
+<li>栗子 : <figure class="highlight tex"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="formula">$$<span class="tag">\<span class="name">begin</span><span class="string">&#123;cases&#125;</span></span></span></div><div class="line"><span class="formula">a_1x+b_1y+c_1z=d_1<span class="tag">\<span class="name">\</span></span></span></div><div class="line"><span class="formula">a_2x+b_2y+c_2z=d_2<span class="tag">\<span class="name">\</span></span></span></div><div class="line"><span class="formula">a_3x+b_3y+c_3z=d_3<span class="tag">\<span class="name">\</span></span></span></div><div class="line"><span class="formula"><span class="tag">\<span class="name">end</span><span class="string">&#123;cases&#125;</span></span>$$</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<script type="math/tex; mode=display">\begin{cases}
+a_1x+b_1y+c_1z=d_1\\\\
+a_2x+b_2y+c_2z=d_2\\\\
+a_3x+b_3y+c_3z=d_3\\\\
+\end{cases}</script><p><strong>参考博客</strong>：<a href="http://blog.csdn.net/ethmery/article/details/50670297" target="_blank" rel="external"><strong>ethmery的blog</strong></a></p>
+
+      
+      
+    </div>
+    
+  </div>
+  
+    
+
+
+<nav id="article-nav">
+  
+    <a href="../../16/codeforces870+871/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          codeforces870+871
+        
+      </div>
+    </a>
+  
+  
+    <a href="../初赛知识点整理/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">NOIP初赛准备</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#希腊字母"><span class="toc-number">2.</span> <span class="toc-text">希腊字母</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#字母修饰"><span class="toc-number">3.</span> <span class="toc-text">字母修饰</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#上下标"><span class="toc-number">3.1.</span> <span class="toc-text">上下标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#矢量"><span class="toc-number">3.2.</span> <span class="toc-text">矢量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#字体"><span class="toc-number">3.3.</span> <span class="toc-text">字体</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分组"><span class="toc-number">4.</span> <span class="toc-text">分组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#括号"><span class="toc-number">5.</span> <span class="toc-text">括号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#求和、极限与积分"><span class="toc-number">6.</span> <span class="toc-text">求和、极限与积分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分式和根式"><span class="toc-number">7.</span> <span class="toc-text">分式和根式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#特殊函数"><span class="toc-number">8.</span> <span class="toc-text">特殊函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#特殊符号"><span class="toc-number">9.</span> <span class="toc-text">特殊符号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#空格"><span class="toc-number">10.</span> <span class="toc-text">空格</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#矩阵"><span class="toc-number">11.</span> <span class="toc-text">矩阵</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#基本语法"><span class="toc-number">11.1.</span> <span class="toc-text">基本语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#矩阵边框"><span class="toc-number">11.2.</span> <span class="toc-text">矩阵边框</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#省略元素"><span class="toc-number">11.3.</span> <span class="toc-text">省略元素</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#阵列"><span class="toc-number">12.</span> <span class="toc-text">阵列</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方程组"><span class="toc-number">13.</span> <span class="toc-text">方程组</span></a></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+
+
+
+
+
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="../../16/codeforces870+871/" title="上一篇: codeforces870+871">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="../初赛知识点整理/" title="下一篇: NOIP初赛准备">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="../../../11/03/回忆建兰/">回忆建兰</a></li><li class="post-list-item"><a class="post-list-link" href="../../../11/01/POJ刷题历程/">POJ刷题历程</a></li><li class="post-list-item"><a class="post-list-link" href="../../29/Top-k问题/">Top-k问题</a></li><li class="post-list-item"><a class="post-list-link" href="../../23/重学Segment-Tree/">重学Segment Tree</a></li><li class="post-list-item"><a class="post-list-link" href="../../22/组合数学学习/">组合数学学习</a></li><li class="post-list-item"><a class="post-list-link" href="../../18/POJ刷题/">POJ刷题</a></li><li class="post-list-item"><a class="post-list-link" href="../../16/codeforces870+871/">codeforces870+871</a></li><li class="post-list-item"><a class="post-list-link" href="">MathJax语法学习</a></li><li class="post-list-item"><a class="post-list-link" href="../初赛知识点整理/">NOIP初赛准备</a></li><li class="post-list-item"><a class="post-list-link" href="../hexo搭建过程学习/">hexo搭建过程学习</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2018 Samsara_Karma
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >OIer到访量: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="../../../../js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 9;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+  </div>
+</body>
+</html>

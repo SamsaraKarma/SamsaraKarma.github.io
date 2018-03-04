@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>POJ刷题历程 | Samsara_Karma</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="简介巨坑填不上QAQ">
+<meta name="keywords" content="OI-复赛,POJ">
+<meta property="og:type" content="article">
+<meta property="og:title" content="POJ刷题历程">
+<meta property="og:url" content="http://yoursite.com/2017/11/01/POJ刷题历程/index.html">
+<meta property="og:site_name" content="Samsara_Karma">
+<meta property="og:description" content="简介巨坑填不上QAQ">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:updated_time" content="2017-11-03T06:43:58.897Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="POJ刷题历程">
+<meta name="twitter:description" content="简介巨坑填不上QAQ">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="../../../../css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/',
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/head.jpg" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/" title="Hi Mate">Samsara_Karma</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">For OI And Math</p>
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="../../../../index.html">博客首页</a></li>
+                        
+                            <li><a href="../../../../tags/OI-初赛">初赛学习</a></li>
+                        
+                            <li><a href="../../../../tags/OI-复赛">复赛学习</a></li>
+                        
+                            <li><a href="../../../../tags/杂记">往事回忆</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="https://mail.qq.com/cgi-bin/frame_html?sid=rygbwhxi7HuqbzRt&r=c568a03d1a11c72df41290223be69d55" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/SamsaraKarma" title="github">github</a>
+                            
+                                <a class="fl zhihu" target="_blank" href="https://www.zhihu.com" title="zhihu">zhihu</a>
+                            
+                                <a class="fl QQ" target="_blank" href="https://user.qzone.qq.com/1536679559" title="QQ">QQ</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="../../../../tags/OI-初赛/" style="font-size: 10px;">OI-初赛</a> <a href="../../../../tags/OI-复赛/" style="font-size: 20px;">OI-复赛</a> <a href="../../../../tags/POJ/" style="font-size: 15px;">POJ</a> <a href="../../../../tags/codeforces/" style="font-size: 10px;">codeforces</a> <a href="../../../../tags/web搭建/" style="font-size: 10px;">web搭建</a> <a href="../../../../tags/实时赛/" style="font-size: 10px;">实时赛</a> <a href="../../../../tags/常用语法学习/" style="font-size: 10px;">常用语法学习</a> <a href="../../../../tags/数据结构/" style="font-size: 10px;">数据结构</a> <a href="../../../../tags/杂记/" style="font-size: 10px;">杂记</a> <a href="../../../../tags/极值问题/" style="font-size: 10px;">极值问题</a> <a href="../../../../tags/模板/" style="font-size: 10px;">模板</a> <a href="../../../../tags/组合数学/" style="font-size: 10px;">组合数学</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.cnblogs.com/Dance-Of-Faith">Dance_Of_Faith</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.cnblogs.com/logic-yzf">logic-yzf</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://tkandi.github.io">tkandi</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://anthonyledger.github.io">Deluxurous</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://orbitingflea.github.io">orbitingflea</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.csdn.net/functionendless">functionendless</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://foreverpiano.cf">foreverpiano</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://tenecnt.github.io">tenecnt</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.csdn.net/effervescence/">effervescence</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.cnblogs.com/whc200305/">pinkex</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.csdn.net/qq_39992190">CalvinJin</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">有疑问联系作者QQ:1536679559</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>           
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">Samsara_Karma</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/head.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="Me">Samsara_Karma</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">For OI And Math</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="../../../../index.html">博客首页</a></li>
+                
+                    <li><a href="../../../../tags/OI-初赛">初赛学习</a></li>
+                
+                    <li><a href="../../../../tags/OI-复赛">复赛学习</a></li>
+                
+                    <li><a href="../../../../tags/杂记">往事回忆</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="https://mail.qq.com/cgi-bin/frame_html?sid=rygbwhxi7HuqbzRt&r=c568a03d1a11c72df41290223be69d55" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/SamsaraKarma" title="github">github</a>
+                    
+                        <a class="zhihu" target="_blank" href="https://www.zhihu.com" title="zhihu">zhihu</a>
+                    
+                        <a class="QQ" target="_blank" href="https://user.qzone.qq.com/1536679559" title="QQ">QQ</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-POJ刷题历程" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="" class="article-date">
+      <time datetime="2017-11-01T00:16:53.000Z" itemprop="datePublished">2017-11-01</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      POJ刷题历程
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/OI-复赛/">OI-复赛</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/POJ/">POJ</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>巨坑填不上QAQ</p>
+<a id="more"></a>
+<h2 id="1003-Hangover"><a href="#1003-Hangover" class="headerlink" title="1003 Hangover"></a>1003 Hangover</h2><p>一句话题意：给一个浮点数limit，求$\sum_{i=2}^Ans{\frac{1}{i}} &lt;= limit$的最大Ans值</p>
+<p>一句话题解：暴力</p>
+<p>代码：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;  </div><div class="line">	<span class="keyword">float</span> res[<span class="number">300</span>] = &#123;<span class="number">0</span>,<span class="number">0.5</span>&#125;, c;  </div><div class="line">	<span class="keyword">int</span> num = <span class="number">0</span>;  </div><div class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt; <span class="number">300</span>; ++i)  </div><div class="line">		res[i] = res[i - <span class="number">1</span>] + <span class="number">1.0</span>/ (i + <span class="number">1</span>);   </div><div class="line">	<span class="keyword">while</span> (<span class="built_in">scanf</span>(<span class="string">"%f"</span>, &amp;c) &amp;&amp; c)   </div><div class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; <span class="number">300</span>; ++i)  </div><div class="line">			<span class="keyword">if</span> (res[i] &gt;= c) &#123;</div><div class="line">				<span class="built_in">printf</span>(<span class="string">"%d card(s)\n"</span>,i);  </div><div class="line">				<span class="keyword">break</span>;  </div><div class="line">			&#125;  </div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;  </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+
+      
+      
+    </div>
+    
+  </div>
+  
+    
+
+
+<nav id="article-nav">
+  
+    <a href="../../03/回忆建兰/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          回忆建兰
+        
+      </div>
+    </a>
+  
+  
+    <a href="../../../10/29/Top-k问题/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Top-k问题</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1003-Hangover"><span class="toc-number">2.</span> <span class="toc-text">1003 Hangover</span></a></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+
+
+
+
+
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="../../03/回忆建兰/" title="上一篇: 回忆建兰">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="../../../10/29/Top-k问题/" title="下一篇: Top-k问题">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="../../03/回忆建兰/">回忆建兰</a></li><li class="post-list-item"><a class="post-list-link" href="">POJ刷题历程</a></li><li class="post-list-item"><a class="post-list-link" href="../../../10/29/Top-k问题/">Top-k问题</a></li><li class="post-list-item"><a class="post-list-link" href="../../../10/23/重学Segment-Tree/">重学Segment Tree</a></li><li class="post-list-item"><a class="post-list-link" href="../../../10/22/组合数学学习/">组合数学学习</a></li><li class="post-list-item"><a class="post-list-link" href="../../../10/18/POJ刷题/">POJ刷题</a></li><li class="post-list-item"><a class="post-list-link" href="../../../10/16/codeforces870+871/">codeforces870+871</a></li><li class="post-list-item"><a class="post-list-link" href="../../../10/12/MathJax语法学习/">MathJax语法学习</a></li><li class="post-list-item"><a class="post-list-link" href="../../../10/12/初赛知识点整理/">NOIP初赛准备</a></li><li class="post-list-item"><a class="post-list-link" href="../../../10/12/hexo搭建过程学习/">hexo搭建过程学习</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2018 Samsara_Karma
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >OIer到访量: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="../../../../js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 9;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+  </div>
+</body>
+</html>
